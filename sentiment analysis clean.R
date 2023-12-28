@@ -194,16 +194,16 @@ performance_summary <-
             by = "prompt") %>%
   mutate(full_prompt = prompt,
          prompt = case_match(prompt,
-                             "eng_main_prompt" ~ "Main - *Claude-2*",
-                             "eng_main_prompt_gpt4" ~ "Main - *GPT-4*",
-                             "eng_main_prompt_less_explicit_gpt4" ~ "Less explicit - *GPT-4*",
-                             "eng_main_prompt_lessexplicit" ~ "Less explicit - *Claude-2*",
-                             "eng_prompt_minimal" ~ "Minimal - *Claude-2*",
-                             "eng_prompt_noexamples" ~ "No examples - *Claude-2*",
-                             "nl_main_prompt" ~ "NL Main - *Claude-2*",
-                             "nl_main_prompt_lessexplicit" ~ "NL Less explicit - *Claude-2*",
-                             "nl_prompt_minimal" ~ "NL Minimal - *Claude-2*",
-                             "nl_prompt_noexamples" ~ "NL No examples - *Claude-2*"),
+                             "eng_main_prompt" ~ "Main - *Claude 2*",
+                             "eng_main_prompt_gpt4" ~ "Main - *ChatGPT-4*",
+                             "eng_main_prompt_less_explicit_gpt4" ~ "Less explicit - *ChatGPT-4*",
+                             "eng_main_prompt_lessexplicit" ~ "Less explicit - *Claude 2*",
+                             "eng_prompt_minimal" ~ "Minimal - *Claude 2*",
+                             "eng_prompt_noexamples" ~ "No examples - *Claude 2*",
+                             "nl_main_prompt" ~ "NL Main - *Claude 2*",
+                             "nl_main_prompt_lessexplicit" ~ "NL Less explicit - *Claude 2*",
+                             "nl_prompt_minimal" ~ "NL Minimal - *Claude 2*",
+                             "nl_prompt_noexamples" ~ "NL No examples - *Claude 2*"),
          krip = krippendorff_alpha)
 
 performance_summary_single <-
